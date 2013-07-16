@@ -1,0 +1,17 @@
+!!!5
+html
+  head
+    title #{title} - My Site
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    body
+      header
+        h1 My Site
+      a(href="/file_upload") File upload
+      .container
+        .main-content
+          block content
+        .side-bar
+          block side bar
+      block file_upload
+      footer
+        p Running on node with Express, Jade and Stylus

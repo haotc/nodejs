@@ -1,0 +1,9 @@
+!!!5
+html
+  head
+    title #{title} - File upload
+    body
+      h1 #{title}
+        form(action="upload_file", method="POST", enctype="multipart/form-data")
+          input(type="file", name="displayImage")
+          input(type="button", value="Upload") 
